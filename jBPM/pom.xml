@@ -11,7 +11,6 @@
 
 	<name>jBPM :: Sample Maven Project</name>
 	<description>A sample jBPM Maven project</description>
-	<url>http://jbpm.org</url>
 
 	<properties>
 		<runtime.version>7.0.0.Final</runtime.version>
@@ -33,10 +32,15 @@
 				<updatePolicy>daily</updatePolicy>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>guvnor-m2-repo</id>
+			<name>Guvnor M2 Repo</name>
+			<url>/maven2/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-api</artifactId>
