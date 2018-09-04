@@ -19,6 +19,7 @@
 	</properties>
 
 	<repositories>
+<!-- 
 		<repository>
 			<id>jboss-public-repository-group</id>
 			<name>JBoss Public Repository Group</name>
@@ -32,6 +33,7 @@
 				<updatePolicy>daily</updatePolicy>
 			</snapshots>
 		</repository>
+-->
 		<repository>
 			<id>guvnor-m2-repo</id>
 			<name>Guvnor M2 Repo</name>
