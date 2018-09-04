@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sample</groupId>
@@ -17,29 +17,6 @@
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<repositories>
-<!-- 
-		<repository>
-			<id>jboss-public-repository-group</id>
-			<name>JBoss Public Repository Group</name>
-			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</repository>
--->
-		<repository>
-			<id>guvnor-m2-repo</id>
-			<name>Guvnor M2 Repo</name>
-			<url>/maven2/</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 
@@ -62,6 +39,19 @@
 		</dependency>
 
 	</dependencies>
+
+	<repositories>
+		<!-- <repository> <id>jboss-public-repository-group</id> <name>JBoss Public 
+			Repository Group</name> <url>http://repository.jboss.org/nexus/content/groups/public/</url> 
+			<releases> <enabled>true</enabled> <updatePolicy>never</updatePolicy> </releases> 
+			<snapshots> <enabled>true</enabled> <updatePolicy>daily</updatePolicy> </snapshots> 
+			</repository> -->
+		<repository>
+			<id>guvnor-m2-repo</id>
+			<name>Guvnor M2 Repo</name>
+			<url>/maven2/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<pluginManagement>
